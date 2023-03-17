@@ -1,4 +1,4 @@
-public class Student {
+public class ControlStatements {
     public static void main(String[] args) {
 //        if statements
 //        String address = "Delhi, India";
