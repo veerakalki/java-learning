@@ -1,4 +1,3 @@
-package Final.java;
 //Java final variable(compile time error)
 
 //public class Bike9 {

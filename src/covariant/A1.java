@@ -1,4 +1,4 @@
-package CovariantExample.java;
+package covariant;
 
 class A1
 {
