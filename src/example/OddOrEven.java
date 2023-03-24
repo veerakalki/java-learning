@@ -1,3 +1,5 @@
+package example;
+
 import java.util.Scanner;
 
 public class OddOrEven {
@@ -9,9 +11,4 @@ public class OddOrEven {
            System.out.println("false");
        }
     }
-
-
-
-
-
 
