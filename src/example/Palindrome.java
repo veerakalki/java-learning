@@ -4,34 +4,26 @@ import java.util.Scanner;
 
 public class Palindrome {
     public static void main(String args[]) {
-        int palindrome = 121; // copied number into variable
-        int reverse = 0;
-
-
-        if (isPalindrome(palindrome)) {
-            System.out.println("Number : " + palindrome
-                    + " is a palindrome");
-        } else {
-            System.out.println("Number : " + palindrome
-                    + " is not a palindrome");
+        System.out.println("Enter the number to check");
+        Scanner scan =new Scanner(System.in);
+        int number=scan.nextInt();
+        scan.close();
+        int original = number;
+        int check=0;
+        int temp=0;
+        while(number>0){
+            temp=number%10;
+            check = (check*10)+temp;
+            number = number/10;
         }
-    }
+        if(original == check){
+            System.out.println(" is a palindrome");
 
-    public static boolean isPalindrome(int number) {
-        int palindrome = number; // copied number into variable
-        int reverse = 0;
+        }
+        else{
+            System.out.println("is not a palindrome");
 
-        while (palindrome != 0) {
-            int remainder = palindrome % 10;
-            reverse = reverse * 10 + remainder;
-            palindrome = palindrome / 10;
         }
 
-        // if original and the reverse of number is equal means
-        // number is palindrome in Java
-        if (number == reverse) {
-            return true;
-        }
-        return false;
     }
 }
